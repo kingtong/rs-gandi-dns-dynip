@@ -1,5 +1,13 @@
 [package]
+authors = ["Nicolas Olivier <nicolas@kingtong.org>"]
+categories = ["command-line-utilities"]
+description = "Little tool to set an `A` record on a domain registered with Gandi."
+documentation = "https://github.com/kingtong/rs-gandi-dns-dynip/blob/master/README.md"
+readme = "README.md"
+homepage = "https://github.com/kingtong/rs-gandi-dns-dynip"
+repository = "https://github.com/kingtong/rs-gandi-dns-dynip"
 name = "rs-gandi-dns-dynip"
+license = "MIT"
 version = "0.1.1"
 edition = "2021"
 
