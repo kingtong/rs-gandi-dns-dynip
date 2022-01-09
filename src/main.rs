@@ -43,6 +43,8 @@ fn main() -> Result<()>{
         }
     };
 
+    println!("Record: {}.{}", settings.record, settings.domain);
+
     let public_ip = settings.ip.unwrap_or(get_public_ip().context("Failed to get public IP")?);
 
     println!("Public IP: {}", public_ip);
