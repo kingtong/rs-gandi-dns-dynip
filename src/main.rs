@@ -59,11 +59,11 @@ fn main() -> Result<()>{
             println!("IPs are matching");
         } else {
             println!("Updating record IP from {} to {}", ip, public_ip);
-            gandi.upsert_record("kingtong.org", "home", &public_ip)?;
+            gandi.upsert_record(&settings.domain, &settings.record, &public_ip)?;
         }
     } else {
         println!("Setting new record with IP {}", public_ip);
-        return gandi.upsert_record("kingtong.org", "home", &public_ip);
+        return gandi.upsert_record(&settings.domain, &settings.record, &public_ip);
     }
 
     Ok(())
