@@ -5,7 +5,6 @@ use std::path::Path;
 
 use anyhow::{Context, Result};
 use serde::Deserialize;
-use serde_json;
 
 #[derive(Debug, Default, Deserialize)]
 pub struct Settings {

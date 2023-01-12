@@ -37,7 +37,7 @@ impl GandiClient {
 
         let mut records: Vec<GandiLiveDNSRecord> = response.json()?;
 
-        if records.len() == 0 {
+        if records.is_empty() {
             println!("Record not declared");
             return Ok(None)
         }
